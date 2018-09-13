@@ -47,7 +47,18 @@ for i in l1:
         l1.remove(i)
     if i==space:
         l1.remove(i)
+        print("hi")
+l1.sort()
+l1.sort(key=l1.count, reverse=True)
+b=" "
 print(l1)
+#for a in l1:
+   # if a==b:
+        #print(a)
+    #else:
+        #print(a)
+    #a=b
+        
 
 
 
