@@ -41,10 +41,12 @@ import string
 l1=(input("Please enter a string of text (the bigger the better): "))
 l1=([x.lower() for x in l1])
 l2=list(string.punctuation)
+space=(' ')
 for i in l1:
     if i in l2:
         l1.remove(i)
-    if
+    if i==space:
+        l1.remove(i)
 print(l1)
 
 
