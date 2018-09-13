@@ -39,7 +39,7 @@ Notice about this example:
 import string
 
 l1=(input("Please enter a string of text (the bigger the better): "))
-print("The distribution of characters in ' + l1 + ' is: ")
+print("The distribution of characters in " + l1 + " is: ")
 l1=([x.lower() for x in l1])
 l2=list(string.punctuation)
 space=(' ')
