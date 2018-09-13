@@ -42,22 +42,21 @@ l1=(input("Please enter a string of text (the bigger the better): "))
 l1=([x.lower() for x in l1])
 l2=list(string.punctuation)
 space=(' ')
+l3=[]
 for i in l1:
-    if i in l2:
-        l1.remove(i)
-    if i==space:
-        l1.remove(i)
-        print("hi")
-l1.sort()
-l1.sort(key=l1.count, reverse=True)
+    if (not i in l2) and (not i==space):
+        l3=l3+[i]
+l3.sort()
+l3.sort(key=l3.count, reverse=True)
 b=" "
-print(l1)
-#for a in l1:
-   # if a==b:
-        #print(a)
-    #else:
-        #print(a)
-    #a=b
+for a in l3:
+    if a==b:
+        print(a, end='')
+    else:
+        if b!=" ":
+            print('')
+        print(a, end='')
+    b=a
         
 
 
