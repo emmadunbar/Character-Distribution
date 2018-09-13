@@ -47,17 +47,19 @@ for i in l1:
     if (not i in l2) and (not i==space):
         l3=l3+[i]
 l3.sort()
-l3.sort(key=l3.count, reverse=True)
+l4=sorted(l3, key=l3.count, reverse=True)
+print(l4)
 b=" "
+print(l3)
 for a in l3:
     if a==b:
         print(a, end='')
     else:
         if b!=" ":
             print('')
-        print(a, end='')
+       print(a, end='')
     b=a
-        
+print('')
 
 
 
